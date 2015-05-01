@@ -1,4 +1,6 @@
 <p id="notice"><%= notice %></p>
-
+ <% for item in @cart.line_items %>
+    <%= item.quantity %>  <%=  item.product.title %> <br>
+ <% end %>
 <%= link_to 'Edit', edit_cart_path(@cart) %> |
 <%= link_to 'Back', carts_path %>
