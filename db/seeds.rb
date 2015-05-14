@@ -16,6 +16,13 @@
 #---
 # encoding: utf-8
 Product.delete_all
+
+#10.times do
+#  Product.create(:title => Faker::Commerce.product_name)
+#  #p.title = Faker::Commerce.product_name
+#  #p.price = Faker::Commerce.price
+#end
+
 Product.create(:title => 'Web Design for Developers',
                :description =>
                    %{<p>
